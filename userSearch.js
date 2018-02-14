@@ -4,10 +4,16 @@ var UserSearch = function(name, location){
 	this.name = name;
 	this.location = location;
 	this.date = Date.now();
+	// console.log(this.date)
+	this.bio = function(){
+		console.log(this.name)
+		console.log(this.location)
+	}
 	this.sendData = function(){
-		var newUser = UserSearch.name + UserSearch.location;
+		
+		var newUser = this.name + " " + this.location + ", ";
 
-		fs.appendFile(textFile, newUser, function(err){
+		fs.appendFile("log.txt", newUser, function(err){
 
 		if (err){
 			console.log(err);
@@ -15,6 +21,7 @@ var UserSearch = function(name, location){
 		else{
 			console.log("Data Sent");
 	}
+
 });
 
 	}
@@ -23,6 +30,9 @@ var UserSearch = function(name, location){
 
 
 
+// var frank = new UserSearch("Frank", "Hayward CA")
+// frank.bio();
+// frank.sendData();
 
 
 module.exports = UserSearch;
