@@ -1,0 +1,23 @@
+{
+  "name": "weatheradmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WeatherAdmin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dangrmurray/WeatherAdmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dangrmurray/WeatherAdmin/issues"
+  },
+  "homepage": "https://github.com/Dangrmurray/WeatherAdmin#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0",
+    "weather-js": "^2.0.0"
+  }
+}
